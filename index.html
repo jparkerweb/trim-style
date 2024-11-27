@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trim-style</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+    <h1>✂️ trim-style</h1>
+    <h4 class="text-align-center">In chrome browser dev tools, right click an element and click "Copy CSS"</h4>
+    <div class="container">
+        <form id="styleForm">
+            <textarea 
+                id="styleInput" 
+                placeholder="Paste your raw CSS styles here..."
+                required
+            ></textarea>
+            <div class="button-group">
+                <button type="submit">Trim Style</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </div>
+        </form>
+        <div id="results"></div>
+    </div>
+    <div id="toast" class="toast"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
