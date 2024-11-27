@@ -376,6 +376,8 @@ button:active {
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     transition: all 0.2s;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #results:hover {
