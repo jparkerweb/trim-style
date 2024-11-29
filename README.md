@@ -19,3 +19,5 @@ A lightweight tool that helps you clean and format CSS properties copied from br
 3. Click "Copy CSS"
 4. Paste into trim-style
 5. Get clean CSS properties!
+
+![trim-style](img/trim-style.gif)
