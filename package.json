@@ -1,0 +1,13 @@
+{
+  "name": "trim-style",
+  "version": "1.0.0",
+  "description": "A simple web server for trim-style.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+} 
