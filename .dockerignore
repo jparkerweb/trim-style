@@ -1,0 +1,21 @@
+# Git files
+.git
+.gitignore
+
+# Documentation
+README.md
+CHANGELOG.md
+
+# Development files
+*.md
+LICENSE
+
+# Node modules (if any)
+node_modules
+npm-debug.log
+package.json
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db

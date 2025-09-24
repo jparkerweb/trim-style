@@ -1,13 +1,31 @@
 {
   "name": "trim-style",
   "version": "1.0.0",
-  "description": "A simple web server for trim-style.",
+  "description": "Simple web app for extracting only the essential styles from raw style properties",
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "docker": "npm run docker:build && npm run docker:run:dev",
+    "docker:build": "docker build -t trim-style .",
+    "docker:run": "docker run -p 8080:80 trim-style",
+    "docker:run:3000": "docker run -p 3000:80 trim-style",
+    "docker:run:dev": "docker run -p 8081:80 --rm trim-style",
+    "docker:stop": "docker stop $(docker ps -q --filter ancestor=trim-style)",
+    "docker:clean": "docker rmi trim-style",
+    "docker:logs": "docker logs $(docker ps -q --filter ancestor=trim-style)",
     "start": "node server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "styles",
+    "trim",
+    "dev-tools",
+    "web-app"
+  ],
   "author": "",
-  "license": "ISC"
-} 
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jparkerweb/trim-style.git"
+  }
+}
