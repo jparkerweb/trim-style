@@ -38,8 +38,8 @@ jobs:
       with:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
         tags: |
-          # set latest tag for main/master branch
-          type=raw,value=latest,enable={{is_default_branch}}
+          # set latest tag for main/master branch only
+          type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
           # set full version tag for releases (1.0.0, 1.0.1, etc.)
           type=semver,pattern={{version}}
 
