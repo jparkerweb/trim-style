@@ -48,7 +48,7 @@ jobs:
           # set latest tag for main/master branch
           type=raw,value=latest,enable={{is_default_branch}}
           # add commit sha for unique identification
-          type=sha,prefix={{branch}}-
+          type=sha,prefix=sha-
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
