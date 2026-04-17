@@ -1,6 +1,8 @@
 # trim-style
 ✂️ Simple web app for extracting only the essential styles from raw style properties
 
+<img src="https://github.com/jparkerweb/trim-style/blob/main/time-style.jpg?raw=true" alt="banner">
+
 ## About
 A lightweight tool that helps you clean and format CSS properties copied from browser dev tools. Simply right-click an element in Chrome's dev tools, select "Copy CSS", and paste it here to get clean, formatted CSS properties.
 
