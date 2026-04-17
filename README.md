@@ -21,3 +21,5 @@ A lightweight tool that helps you clean and format CSS properties copied from br
 5. Get clean CSS properties!
 
 ![trim-style](img/trim-style.gif)
+
+<a href="https://trim-style.equilllabs.com/" data-tag="demo">DEMO</a>
